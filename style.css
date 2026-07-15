@@ -1,0 +1,140 @@
+/* Grundkonfiguration */
+:root {
+    --bg-color: #faf9f6; /* Weiches Off-White */
+    --text-color: #2b2b2b;
+    --accent-color: #8c7853; /* Edler Gold/Sandton */
+    --card-bg: #ffffff;
+    --font-serif: 'Georgia', serif;
+    --font-sans: 'Segoe UI', -apple-system, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+    background-color: var(--card-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 8%;
+    border-bottom: 1px solid #eaeae8;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: var(--accent-color);
+    font-weight: 300;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-left: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 1rem 3rem 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-family: var(--font-serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+/* Container & Sektionen */
+.container {
+    max-width: 800px;
+    margin: 2rem auto 6rem auto;
+    padding: 0 1.5rem;
+}
+
+.category-section {
+    margin-bottom: 4rem;
+}
+
+.category-section h2 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent-color);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eaeae8;
+    padding-bottom: 0.5rem;
+}
+
+/* Zitate-Karten */
+.quote-card {
+    background: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+    margin-bottom: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+    transition: transform 0.3s ease;
+}
+
+.quote-card:hover {
+    transform: translateY(-3px);
+}
+
+.quote-text {
+    font-family: var(--font-serif);
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.quote-author {
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: var(--card-bg);
+    border-top: 1px solid #eaeae8;
+    color: #888;
+    font-size: 0.9rem;
+}
